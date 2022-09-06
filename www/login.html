@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="eel.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <h1 id="h1">Login</h1>
+    <h1 id="h2" onclick="SignUp()">Sign Up</h1>
+    <h1 id="h3" onclick="Reset()">Reset Password</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="username" class="inputs">
+        <div class="show-password fas fa-eye-slash" id="toggle_password" onclick="EyePassword()"></div>
+        <label id="username_alert" class="alerts"></label>
+        <br>
+        <br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="password" class="inputs">
+        <label id="password_alert" class="alerts"></label>
+        <br>
+        <br>
+        <a href="forgot.html" id="forgot">Forgot password?</a>
+        <br>
+        <br>
+        <button id="login" onclick="Valid()">Login</button>
+        <br>
+        <br>
+        <label id="sign_up">Don't have an account?  <a href="sign_up.html">Sign up</a></label>
+    </div>
+</body>
+</html>

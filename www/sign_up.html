@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="eel.js"></script>
+    <script type="text/javascript" src="sign_up.js"></script>
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1 id="h1" onclick="Login()">Login</h1>
+    <h1 id="h2">Sign Up</h1>
+    <h1 id="h3" onclick="Reset()">Reset Password</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="username" class="inputs">
+        <label id="username_alert" class="alerts"></label>
+        <br>
+        <br>
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="password" class="inputs">
+        <div class="show-password fas fa-eye-slash" id="toggle_password" onclick="EyePassword()"></div>
+        <label id="password_alert" class="alerts"></label>
+        <br>
+        <br>
+        <label><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" id="confirm" class="inputs">
+        <div class="show-confirm fas fa-eye-slash" id="toggle_confirm" onclick="EyeConfirm()"></div>
+        <label id="confirm_alert" class="alerts"></label>
+        <br>
+        <br>
+        <label><b>Security Question</b></label>
+        <br>
+        <select id="question" onchange="ColorFix()">
+            <option disabled selected>Select Question</option>
+            <option>What is your favorite color?</option>
+            <option>What is your favorite band/musician?</option>
+            <option>What was your major in high school?</option>
+            <option>What was the name of your elementary school?</option>
+            <option>Where was your first flight abroad?</option>
+        </select>
+        <label id="question_alert" class="alerts"></label>
+        <br>
+        <br>
+        <label><b>Answer</b></label>
+        <input type="text" placeholder="Enter Answer" id="answer" class="inputs">
+        <label id="answer_alert" class="alerts"></label>
+        <br>
+        <br>
+        <button id="sign_up" onclick="Valid()">Sign Up</button>
+        <br>
+        <br>
+        <label id="login">Already have an account?  <a href="login.html">Login</a></label>
+        <br>
+        <br>
+    </div>
+</body>
+</html>

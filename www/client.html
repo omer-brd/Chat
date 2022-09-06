@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="eel.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+    <link rel="stylesheet" href="client.css">
+    <link rel="stylesheet" href="modals.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Chat</title>
+</head>
+<body onload="Join()" onbeforeunload="quit()">
+    <div id="container">
+        <table id="tbl">
+            <tr id="top">
+                <td>
+                    <div id="chat">
+                    </div>
+                </td>
+                <td id="left">
+                    <div id="upper_bar">
+                        <button id="friends_btn" class="dis" onclick="start_friends()">Friends</button>
+                        <button id="groups_btn" class="dis" onclick="start_groups()">Groups</button>
+                    </div>
+                    <div id="friends">
+                    </div>
+                    <div id="groups">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <textarea placeholder="Type Here:" id="input" class="dis" onkeyup="EnterSend(event)"></textarea> &nbsp;
+                        <button id="send" class="dis" onclick="send_msg()"><img src="send.png"></button>
+                    </div>
+                </td>
+                <td id="bar">
+                    <div id="lower_bar">
+                        <button id="manage_friends" class="dis" onclick="open_friends()">manage friends</button>
+                        <button id="manage_groups" class="dis" onclick="open_groups()">manage groups</button>
+                        <button id="edit" class="dis" onclick="open_profile()">Profile</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="friends_window">
+        <span class="close" id="close2" onclick="close_friends()">&times;</span>
+        <table id="tbl_in2">
+            <tr>
+                <td>
+                    <div class="divs">
+                        <h1>Add Friend</h1>
+                        <p>Friend name:</p>
+                        <input id="friend_username" type="text">
+                        <br>
+                        <label id="friend_username_alert" class="alerts"></label>
+                        <br>
+                        <br>
+                        <button id="add" onclick="add_friend()" class="btns">Add</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="divs">
+                        <h1>Remove Friend</h1>
+                        <p>Select friend:</p>
+                        <select id="user_friends">
+                        </select>
+                        <br>
+                        <label id="user_friends_alert" class="alerts"></label>
+                        <br>
+                        <br>
+                        <button id="remove" onclick="remove_friend()" class="btns">Remove</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="groups_window">
+        <span class="close" id="close1" onclick="close_groups()">&times;</span>
+        <table id="tbl_in1">
+            <tr>
+                <td>
+                    <div class="divs">
+                        <h1>Create Group</h1>
+                        <p>Group name:</p>
+                        <input id="group_name" type="text">
+                        <br>
+                        <label id="create_group_alert" class="alerts"></label>
+                        <br>
+                        <p>Members:</p>
+                        <div id="members" onclick="ShowCheckboxes()">
+                            <select>
+                                <option>Select friends</option>
+                            </select>
+                            <div id="overSelect"></div>
+                            </div>
+                            <div id="checkboxes">
+                            </div>
+                        <br>
+                        <br>
+                        <button id="create" onclick="create_group()" class="btns">Create</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="divs">
+                        <h1>Leave Group</h1>
+                        <p>Select group:</p>
+                        <select id="user_groups">
+                        </select>
+                        <br>
+                        <label id="leave_group_alert" class="alerts"></label>
+                        <br>
+                        <br>
+                        <button id="leave" class="btns" onclick="leave_group()">Leave</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="profile_window">
+        <span class="close" id="close3" onclick="close_profile()">&times;</span>
+        <table id="tbl_in3">
+            <tr>
+                <td>
+                    <div class="divs">
+                        <h1>Change Name</h1>
+                        <p>New name:</p>
+                        <input id="username" type="text">
+                        <br>
+                        <label id="username_alert" class="alerts"></label>
+                        <br>
+                        <br>
+                        <button id="change_name" class="btns" onclick="change_username()">Change</button>
+                    </div>
+                </td>
+                <td>
+                    <div class="divs">
+                        <h1>Change Password</h1>
+                        <p>New password:</p>
+                        <input id="password" type="password">
+                        <br>
+                        <label id="password_alert" class="alerts"></label>
+                        <br>
+                        <p>Confirm password:</p>
+                        <input id="confirm" type="password">
+                        <br>
+                        <label id="confirm_alert" class="alerts"></label>
+                        <br>
+                        <br>
+                        <button id="change_pass" class="btns" onclick="change_password()">Change</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

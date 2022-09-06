@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-image: url("login_back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #d9d9d9;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+#login {
+    background-color: #d9d9d9;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    width: 20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    font-size: 30px;
+    outline-style: none;
+}
+button:hover {
+    opacity: 0.8;
+}
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    outline-style: none;
+}
+#h1 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 18%;
+    border: 1px solid white;
+    background-color: #ececec;
+    color: #3c3f41;
+    border-radius: 20px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+}
+#h2 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    cursor: pointer;
+    color: #ececec;
+}
+#h3 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 60%;
+    cursor: pointer;
+    color: #ececec;
+}
+label {
+    margin-left: 10%;
+    font-size: 15px;
+}
+.alerts {
+    margin-left: 10%;
+    font-size: 15px;
+    color: red;
+}
+#forgot {
+    margin-left: 10%;
+}
+a {
+    color: black;
+    font-size: 20px;
+}
+input:focus {
+    border-color: #738ADB;
+}
+#sign_up {
+    font-size: 20px;
+}
+.show-password {
+    position: absolute;
+    right: 11.5%;
+    top: 33.3%;
+    line-height: 30px;
+    color: black;
+}

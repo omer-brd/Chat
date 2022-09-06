@@ -1,0 +1,136 @@
+#groups_window, #friends_window, #profile_window {
+    display: none;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    height: 75%;
+    border: 5px solid #575757;
+    border-radius: 30px;
+    color: white;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+#friends_window {
+    background-image: url("friends_back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#groups_window {
+    background-image: url("groups_back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#profile_window {
+    background-image: url("profile_back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+.close {
+  color: #575757;
+  float: right;
+  margin-right: 1%;
+  font-size: 40px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+#tbl_in1, #tbl_in2, #tbl_in3 {
+    font-size: 30px;
+    height: 90%;
+    width: 100%;
+    align: center;
+    text-align: center;
+}
+h1 {
+    font-family: Aharoni;
+}
+p, label {
+    font-family: Century Gothic;
+}
+.divs {
+    padding-top: 1%;
+    padding-bottom: 5%;
+    height: 80%;
+}
+.btns {
+    font-family: Century Gothic;
+    border-radius: 5px;
+    border: 3px solid #575757;
+    cursor: pointer;
+}
+.btns:hover {
+    background-color: lightgray;
+}
+#members {
+    position: relative;
+}
+#members select {
+    background-color: #001220;
+    border-radius: 5px;
+    border: 2px solid #575757;
+    width: 20%;
+    color: #ef5f67;
+}
+#overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#checkboxes {
+    margin: auto;
+    text-align: left;
+    padding-left: 10px;
+    top: -3px;
+    width: calc(20% - 10px);
+    position: relative;
+    height: 15%;
+    overflow-y: scroll;
+    display: none;
+    color: #ef5f67;
+    background-color: #001220;
+    border: 2px #575757 solid;
+}
+#checkboxes label {
+    display: block;
+}
+.checks {
+    font: -webkit-small-control;
+}
+select {
+    background-color: #001220;
+}
+#user_friends {
+    color: #6d9aad;
+}
+#user_groups {
+    color: #ef5f67;
+}
+option {
+    background-color: #001220;
+}
+img {
+    width: 38px;
+    height: 38px;
+}

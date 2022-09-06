@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-image: url("forgot_back.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #d9d9d9;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+#reset {
+    background-color: #d9d9d9;
+    color: black;
+    padding: 14px 20px;
+    border: none;
+    width: 20%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    font-size: 30px;
+    outline-style: none;
+}
+button:hover {
+    opacity: 0.8;
+}
+input {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    outline-style: none;
+}
+#h3 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 58%;
+    border: 1px solid white;
+    background-color: #ececec;
+    color: #3c3f41;
+    border-radius: 20px;
+    width: 450px;
+    height: 60px;
+    cursor: pointer;
+}
+#h2 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 40%;
+    cursor: pointer;
+    color: #ececec;
+}
+#h1 {
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    left: 20%;
+    cursor: pointer;
+    color: #ececec;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+label {
+    margin-left: 10%;
+    font-size: 15px;
+}
+.alerts {
+    margin-left: 10%;
+    font-size: 15px;
+    color: red;
+}
+#forgot {
+    margin-left: 10%;
+}
+a {
+    color: black;
+    font-size: 20px;
+}
+input:focus {
+    border-color: #738ADB;
+}
+#login {
+    font-size: 20px;
+}
+select {
+    width: 80%;
+    color: grey;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    outline-style: none;
+}
+option {
+    color: black;
+}
+select:focus {
+    border-color: #738ADB;
+}
+.show-password {
+    position: absolute;
+    right: 11.5%;
+    top: 34%;
+    line-height: 30px;
+    color: black;
+}
